@@ -1,0 +1,18 @@
+*{
+    font-family: Arial;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.App {
+    background: linear-gradient();
+}
+
+h2 {
+    text-decoration: none;
+    color: #000;
+}
+
+/*#49C7FF, #ff7a1a*/
+
