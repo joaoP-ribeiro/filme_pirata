@@ -31,13 +31,13 @@ function Home(){
         <div className="App">
             <Nav_bar/>
            <div className="container_resposta_API">
-
-                <h2 className="title_resposta_API">Melhores Filmes:</h2>
-                <div className="container_filmes">
-                    {melhores_filmes.length === 0 && <p>Carregando...</p>}
-                    {melhores_filmes.length > 0 && melhores_filmes.map((filme) => <Carta_filme key={filme.id} filme={filme}/>)}
+                <div className="container">
+                    <h2 className="title_resposta_API">Melhores Filmes:</h2>
+                    <div className="container_filmes">
+                        {melhores_filmes.length === 0 && <p>Carregando...</p>}
+                        {melhores_filmes.length > 0 && melhores_filmes.map((filme) => <Carta_filme key={filme.id} filme={filme}/>)}
+                    </div>
                 </div>
-
            </div>
         </div>
     )

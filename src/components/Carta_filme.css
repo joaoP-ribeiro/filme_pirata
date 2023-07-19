@@ -24,7 +24,7 @@
 
 .nome_filme{
     text-decoration: none;
-    color: #ff7a1a;
+    color: #7F0102;
 }
 
 .foto_container{
@@ -45,12 +45,12 @@
     background: transparent;
     border: 0;
     font-size: 4rem;
-    color: #ff7a1a;
+    color: #7F0102;
 }
 
 .foto_container button:hover {
     transition: 0.3s ease-out;
-    color: #ff7a1a;
+    color: #7F0102;
     opacity: 0.6;
     cursor: pointer;
 }
