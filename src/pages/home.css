@@ -1,5 +1,5 @@
 *{
-    font-family: Arial;
+    font-family: sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -12,7 +12,11 @@ h2 {
 
 .container_resposta_API h2{
     text-align: center;
-    color: #7F0102;
+    color: #fff;
+}
+
+.seta{
+    color: #b82525;
 }
 
 .container_filmes{
@@ -24,7 +28,7 @@ h2 {
 }
 
 .container{
-    background: #FFF;;
+    background: #1C1C28;
 }
 
 .App{
@@ -32,5 +36,10 @@ h2 {
 }
 
 
-/*#49C7FF, #ff7a1a*/
+@media (max-width: 1000px){
+    .container_filmes{
+        grid-template-columns: repeat(auto-fit, 13rem);
+        gap: 1.5rem;
+    }
+}
 

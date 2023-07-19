@@ -2,6 +2,7 @@ import { useState, useEffect } from "react"
 import "./home.css"
 import Nav_bar from "../components/Nav_bar.jsx";
 import Carta_filme from "../components/Carta_filme.jsx";
+import { BiSolidDownArrowAlt } from "react-icons/bi";
 
 function Home(){
 
@@ -32,7 +33,7 @@ function Home(){
             <Nav_bar/>
            <div className="container_resposta_API">
                 <div className="container">
-                    <h2 className="title_resposta_API">Melhores Filmes:</h2>
+                    <h2 className="title_resposta_API">Melhores Filmes<div className="seta"><BiSolidDownArrowAlt/></div></h2>
                     <div className="container_filmes">
                         {melhores_filmes.length === 0 && <p>Carregando...</p>}
                         {melhores_filmes.length > 0 && melhores_filmes.map((filme) => <Carta_filme key={filme.id} filme={filme}/>)}
