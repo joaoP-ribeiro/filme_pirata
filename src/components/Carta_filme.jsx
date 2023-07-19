@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom"
-import {FaStar} from "react-icons/fa"
+import { GiPirateFlag } from "react-icons/gi"
+import { BsFillPlayFill } from "react-icons/bs";
 import "./Carta_filme.css"
 
 
@@ -11,12 +12,15 @@ export default function Carta_filme({filme, showlink = true}){
     return(
 
         <div className="carta_filme">
-            <img className="foto_filme" src={imagem_URL + filme.poster_path} alt={filme.title}/>
-            <h2 className="nome_filme">{filme.title}</h2>
-            <p className="nota">
-                <FaStar/> {filme.vote_average}
-            </p>
-            {showlink && <Link className="bt_mais" to={`/movie/${filme.id}`}>MAIS</Link>}  
+            <div className="foto_container">
+                <img className="foto_filme" src={imagem_URL + filme.poster_path} alt={filme.title}/>
+                {showlink && <Link  to={`/movie/${filme.id}`}><button><BsFillPlayFill/></button></Link>}
+            </div>
+            <div className="inf_container">
+                {showlink && <Link className="nome_filme" to={`/movie/${filme.id}`}>{filme.title}</Link>}
+                <p className="nota"><GiPirateFlag/> <div className="num_nota">{filme.vote_average}</div></p>  
+            </div>
+              
         </div>
 
     )

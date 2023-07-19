@@ -1,0 +1,77 @@
+.carta_filme{
+    height: auto;
+    width: 15rem;
+    border-radius: 8px;
+    text-align: center;
+    margin: 1.5rem ;
+
+    font-size: 1rem;
+    font-weight: bold;
+    
+}
+
+.carta_filme:hover {
+    transition: 0.3s;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.carta_filme img{
+    position: relative;
+    min-height: 250px;
+    width: 100%;
+    border-radius: 0.7rem 0.7rem 0 0;
+}
+
+.nome_filme{
+    text-decoration: none;
+    color: #ff7a1a;
+}
+
+.foto_container{
+    display:inline-block;
+    position: relative;
+}
+
+.foto_container button{
+    position:absolute;
+    width: 80%;
+    height: 80%;
+    top:50%;
+    left:50%;
+    -webkit-transform:translate3d(-50%, -50%, 0);
+    -moz-transform:translate3d(-50%, -50%, 0);
+    transform:translate3d(-50%, -50%, 0);
+
+    background: transparent;
+    border: 0;
+    font-size: 4rem;
+    color: #ff7a1a;
+}
+
+.foto_container button:hover {
+    transition: 0.3s ease-out;
+    color: #ff7a1a;
+    opacity: 0.6;
+    cursor: pointer;
+}
+
+.inf_container{
+    padding: 0.3rem;    
+}
+
+.nota {
+    padding: 0.2rem;
+    display: flex;
+    align-content: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.25rem;
+
+    color: #a67c00;
+}
+
+.num_nota{
+    color: #000
+}
+
+

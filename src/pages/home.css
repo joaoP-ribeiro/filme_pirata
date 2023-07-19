@@ -5,14 +5,24 @@
     box-sizing: border-box;
 }
 
-.App {
-    background: linear-gradient();
-}
-
 h2 {
     text-decoration: none;
     color: #000;
 }
+
+.container_resposta_API h2{
+    text-align: center;
+    color: #ff7a1a;
+}
+
+.container_filmes{
+    justify-content: center;
+    justify-items: center;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 15rem);
+   gap: 2rem;
+}
+
 
 /*#49C7FF, #ff7a1a*/
 

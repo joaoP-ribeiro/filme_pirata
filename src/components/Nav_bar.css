@@ -4,13 +4,11 @@
     align-items: center;
     padding: 1rem;
     box-shadow: 1px 1px 3px #c7c7c7;
+    gap: 0.5rem;
 }
 
-
 .title {
-    color: #51BDFF;
-    text-decoration: none;
-    font-size: 2.5rem;
+    
 }
 
 .input_pesquisa{
