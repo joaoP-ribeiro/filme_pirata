@@ -16,15 +16,22 @@ function Home(){
         const dados = await resposta.json();
 
         set_melhores_filmes(dados.results)
+
     };
 
     useEffect(() => {
 
-        const url_pesquisa_mfilmes = `${filme_Url}top_rated?${apikey}`;
+        const url_pesquisa_mfilmes = []
 
+        for(let i = 1; i <= 5 ; i++){
+            url_pesquisa_mfilmes.push(`${filme_Url}top_rated?${apikey}&page=${i}`);
+        }
 
-        pegar_melhores_filmes(url_pesquisa_mfilmes)
-
+        
+        Promise.all(url_pesquisa_mfilmes.map(pegar_melhores_filmes)).then(() => {
+            pegar_melhores_filmes(url_pesquisa_mfilmes[3])
+        
+        });
     }, [])
 
 

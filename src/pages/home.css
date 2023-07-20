@@ -35,11 +35,33 @@ h2 {
     background: #c7c7c7;
 }
 
+.title_resposta_API{
+    padding-top: 0.7rem;
+}
+
+::-webkit-scrollbar{
+    width: 0.4rem;
+    background-color: #1C1C28;
+}
+
+::-webkit-scrollbar-thumb{
+    background: #b82525;
+    opacity: 0.6;
+    border-radius: 9999px;
+}
+
 
 @media (max-width: 1000px){
     .container_filmes{
         grid-template-columns: repeat(auto-fit, 13rem);
         gap: 1.5rem;
+    }
+}
+
+@media (max-width: 800px){
+    .container_filmes{
+        grid-template-columns: repeat(auto-fit, 10rem);
+        gap: 0.7rem;
     }
 }
 
