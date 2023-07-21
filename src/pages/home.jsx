@@ -24,7 +24,7 @@ function Home(){
         const url_pesquisa_mfilmes = []
 
         for(let i = 1; i <= 1 ; i++){
-            url_pesquisa_mfilmes.push(`https://api.themoviedb.org/3/movie/top_rated?api_key=afcbbffeeb2ca974f0343a7559714222&page=${i}`);
+            url_pesquisa_mfilmes.push(`https://api.themoviedb.org/3/movie/popular?api_key=afcbbffeeb2ca974f0343a7559714222&page=${i}`);
         }
 
         
@@ -43,7 +43,7 @@ function Home(){
             <Nav_bar/>
            <div className="container_resposta_API">
                 <div className="container">
-                    <h2 className="title_resposta_API">Melhores Filmes<div className="seta"><BiSolidDownArrowAlt/></div></h2>
+                    <h2 className="title_resposta_API">Mais Populares<div className="seta"><BiSolidDownArrowAlt/></div></h2>
                     <div className="container_filmes">
                         {melhores_filmes.length === 0 && <p>Carregando...</p>}
                         {melhores_filmes.length > 0 && melhores_filmes.map((filme) => <Carta_filme key={filme.id} filme={filme}/>)}

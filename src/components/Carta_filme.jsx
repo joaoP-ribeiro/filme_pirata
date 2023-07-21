@@ -14,7 +14,7 @@ export default function Carta_filme({filme, showlink = true}){
         <div className="carta_filme">
             <div className="foto_container">
                 <img className="foto_filme" src={imagem_URL + filme.poster_path} alt={filme.title}/>
-                {showlink && <Link  to={`/movie/${filme.id}`}><button><BsFillPlayFill/></button></Link>}
+                {showlink && <Link  to={`/movie/id=${filme.id}`}><button><BsFillPlayFill/></button></Link>}
             </div>          
         </div>
 
