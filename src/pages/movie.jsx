@@ -3,6 +3,8 @@ import { useParams } from "react-router-dom";
 import { useSearchParams } from "react-router-dom";
 import Nav_bar from "../components/Nav_bar.jsx";
 
+    const filme_Url = import.meta.env.VITE_API
+    const apikey = import.meta.env.VITE_API_KEY
 
 export default function Movie(){
     const url_filme = window.location.href;
@@ -19,7 +21,7 @@ export default function Movie(){
     };
 
     useEffect(() =>{
-        const filme_URL = `https://api.themoviedb.org/3/movie/${id}?api_key=afcbbffeeb2ca974f0343a7559714222`
+        const filme_URL = `${filme_Url}${id}?${apikey}`
 
         pegar_filme(filme_URL)
     }, [id])

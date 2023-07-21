@@ -13,6 +13,7 @@ h2 {
 .container_resposta_API h2{
     text-align: center;
     color: #fff;
+    
 }
 
 .seta{
@@ -29,6 +30,7 @@ h2 {
 
 .container{
     background: #1C1C28;
+    padding: 0.1rem;
 }
 
 .App{
