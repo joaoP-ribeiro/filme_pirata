@@ -23,13 +23,16 @@ function Home(){
 
         const url_pesquisa_mfilmes = []
 
-        for(let i = 1; i <= 5 ; i++){
-            url_pesquisa_mfilmes.push(`${filme_Url}top_rated?${apikey}&page=${i}`);
+        for(let i = 1; i <= 1 ; i++){
+            url_pesquisa_mfilmes.push(`https://api.themoviedb.org/3/movie/top_rated?api_key=afcbbffeeb2ca974f0343a7559714222&page=${i}`);
         }
 
         
         Promise.all(url_pesquisa_mfilmes.map(pegar_melhores_filmes)).then(() => {
-            pegar_melhores_filmes(url_pesquisa_mfilmes[3])
+            {url_pesquisa_mfilmes> 0 && url_pesquisa_mfilmes.map((paginas) => 
+                pegar_melhores_filmes(paginas)
+            )}
+            
         
         });
     }, [])
