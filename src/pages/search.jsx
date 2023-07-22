@@ -35,7 +35,9 @@ export default function Search(){
                 <div className="container">
                 <h2 className="title_resposta_API">Resultado<div className="seta"><BiSolidDownArrowAlt/></div></h2>
                 <div className="container_filmes">
-                    {filme.length > 0 && filme.map((filme) => <Carta_filme key={filme.id} filme={filme}/>)}
+                {filme.length > 0 && filme
+                .filter(filme => filme.poster_path !== null).map((filme) => <Carta_filme key={filme.id} filme={filme} />)
+                }
                 </div>
             </div>
            </div>

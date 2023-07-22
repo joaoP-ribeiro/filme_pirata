@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import { useSearchParams } from "react-router-dom";
 import Nav_bar from "../components/Nav_bar.jsx";
+import "./movie.css"
 
     const filme_Url = import.meta.env.VITE_API
     const apikey = import.meta.env.VITE_API_KEY
@@ -38,8 +39,19 @@ export default function Movie(){
 
     return(
         <div className="App_inf">
-            <Nav_bar/>
-            <div>{filme && (<>{filme.title}</>)}</div>
+            <div className="container_inf">
+                <div>{filme && (
+                    <>
+                        <div className="inf_title_filme">{filme.title}</div>
+                    
+                    
+                    
+                    
+                    </>
+                
+                )}</div>
+            </div>
+            
         </div>
     )
 }

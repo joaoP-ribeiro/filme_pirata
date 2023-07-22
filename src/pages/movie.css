@@ -1,0 +1,13 @@
+*{
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.App_inf{
+    background: #c7c7c7;
+}
+
+.container_inf{
+}
